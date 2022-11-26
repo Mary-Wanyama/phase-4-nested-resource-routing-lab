@@ -28,9 +28,9 @@ class ItemsController < ApplicationController
   end
 
   private 
-  
+
   def item_params 
-    params.permit(:name, :description, :price, :user_id)
+    params.permit(:name, :description, :price)
   end
 
   def render_not_found_response
